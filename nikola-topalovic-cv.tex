@@ -1,0 +1,117 @@
+\documentclass[10pt]{article}
+    \usepackage[english]{babel}
+    \input{config/minimal-resume-config}
+    \special { pdf:docinfo << /Title (Nikola Topalović, curriculum vitae) /Author (Nikola Topalović)>> }
+    \begin{document}
+
+\begin{center}
+	% Personal
+	% -----------------------------------------------------
+	{\fontsize{\sizeone}{\sizeone}\fontspec[Path = fonts/,LetterSpace=15]{Montserrat-Regular} NIKOLA TOPALOVIC}
+	\\
+	\vspace{2mm}
+	{\fontsize{1em}{1em}\fontspec[Path = fonts/]{Montserrat-Light} nikola.topalovic@gmail.com · github.com/topalovic}
+\end{center}
+% Chapter: Skills
+% ------------------------
+
+\chap{TECHNICAL SKILLS}{
+	\begin{newitemize}
+		\item Languages: Ruby, Objective-C, C, JavaScript, Bash; some Python, Java and Clojure (\& other Lisps)
+		\item Databases: PostgreSQL, SQLite, Redis, Elasticsearch; some MySQL and MongoDB
+		\item Tools: git, Docker, Emacs, common Unix toolchain, various utilities and build/deployment tools
+	\end{newitemize}
+}
+% Chapter: Work Experience
+% ------------------------
+\chap{EXPERIENCE}{
+
+	\job
+	{Silverfin NV}
+	{2018 – 2023}
+	{Senior Software Engineer}
+	{Remote position}
+	{\begin{newitemize}
+		\item {Owned end to end implementation of company's internal scripting language based on Shopify's Liquid, including its integration into the main (Rails based) SaaS offering. The language itself is key to Silverfin's positioning as the premier cloud accounting platform in the Benelux.}
+		\item {Performed extensive profiling and optimization of critical code paths. Developed linters and profilers to assist in troubleshooting Liquid code.}
+		\item {Helped other departments close deals with major clients, including some of the Big Four accounting firms, by providing relevant technical knowledge. Collaborated with the professional services team on a regular basis to support them in their work.}
+		\item {Primary tools: \emph{Ruby on Rails, PostgreSQL, Redis, Vue.js, GCP, Liquid}}
+		\end{newitemize}}
+	\job
+	{Toptal LLC}
+	{2015 – 2018}
+	{Senior Software Engineer · Technical Team Lead}
+	{Remote position}
+	{\begin{newitemize}
+		\item {Fullstack development of company's service-oriented platform for connecting businesses with software engineers and other talent verticals.}
+		\item {Conducted large scale refactorings and ensured codebase consistency by implementing best practices, rigorous code reviews, and producing internal tooling \& style guides.}
+		\item {A year into my tenure, I graduated to the role of technical team lead in charge of developer bootcamp. Over the next two years, I was responsible for onboarding and supporting more than 50 new engineering hires, while still implementing features throughout the stack.}
+		\item {Primary tools: \emph{Ruby on Rails, PostgreSQL, Redis, Elasticsearch, GraphQL, React}}
+		\end{newitemize}}
+	\job
+	{InterVenture · Data Room Services GmbH}
+	{2012 – 2014}
+	{Senior Software Engineer}
+	{Belgrade · Frankfurt am Main}
+	{\begin{newitemize}
+		\item {Fullstack development of the company's main SaaS product, virtual data rooms for due diligence and secure document exchange.}
+		\item {By first having a robust test suite in place, I have refactored and simplified major platform components.}
+		\item {Championed best practices to make the codebase more consistent and idiomatic. I have also provided technical guidance to the team and conducted dozens of engineering interviews.}
+		\item {Based on my iOS experience, I also held an advisory role during the development of the mobile client.}
+		\item {Primary tools: \emph{Ruby on Rails, AngularJS, Objective-C, PostgreSQL}}
+		\end{newitemize}}
+	\job
+	{nSphere Inc.}
+	{2011 – 2012}
+	{Senior Software Engineer}
+	{Belgrade}
+	{\begin{newitemize}
+		\item {Fullstack development of a cloud-based survey platform, including the API for mobile consumption. This was my first foray into NoSQL and an opportunity to compare and contrast with RDBMS side by side.}
+		\item {Contributed to the iOS application that consumed the API, ensuring a smooth client-server communication.}
+		\item {To maintain integrity between all the moving parts, I have introduced a CI pipeline with extensive integration tests.}
+		\item {Primary tools: \emph{Ruby on Rails, Objective-C, PostgreSQL, MongoDB, SQLite, AWS}}
+		\end{newitemize}}
+	\job
+	{EuroICC · m2e Consulting Engineers}
+	{2008 – 2011}
+	{Software Engineer · Technical Team Lead}
+	{Belgrade · Miami}
+	{\begin{newitemize}
+		\item {Led a small team that developed m2e's enterprise iOS application for construction site inspection, as well as the accompanying web services.}
+		\item {Built a compiler for ladder diagrams and assisted with the integration into the company's Java based IDE.}
+		\item {Developed an iOS app to simulate a tidal chronometer watch, using Apple's low-level Core Graphics API.}
+		\item {Primary tools: \emph{Objective-C, Java, Ruby, MySQL, SQLite}}
+		\end{newitemize}}
+	\job
+	{mikroElektronika}
+	{2004 – 2006}
+	{Web Developer · Technical Writer}
+	{Belgrade}
+	{\begin{newitemize}
+		\item {Responsible for the entirety of company's online presence, from web design to coding and analytics.}
+		\item {Produced majority of technical documentation for software products and translated multiple e-books on electronics \& microcontrollers into English.}
+		\item {Quality assurance and localization of company's flagship software, mikroIDE.}
+		\item {Primary tools: \emph{PHP, MySQL, C, Pascal, assembly}}
+		\end{newitemize}}
+}
+% Chapter: Education
+% ------------------
+
+\chap{EDUCATION}{
+
+	\school
+	{School of Electrical Engineering (ETF)}
+	{University of Belgrade}
+	{Bachelor of Science in Computer Engineering (BSCpE)}
+	{}
+	{}
+	\school
+	{Mathematical Grammar School}
+	{Belgrade}
+	{Charter school for developing math and computer science talents}
+	{}
+	{}
+}
+
+\
+\end{document}
